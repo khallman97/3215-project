@@ -29,8 +29,17 @@
  */
 int main(void)
 {
+	/*
+	char pinArray[4][4] = {
+			{"7" , "8" , "9" , "A"} ,
+			{"4" , "5" , "6" , "B"},
+			{"1" , "2" , "3" , "C"},
+			{"*" , "0" , "#" , "D"}
+	};
 
-	char pinArray[4][4] = {{"7" , "8" , "9" , "A"} , {"4" , "5" , "6" , "B" } , {"1" , "2" , "3" , "C" } , {"*" , "0" , "#" , "D" }};
+*/
+
+
 
 	/**8 ports**/
 	/* first 4 are for x axis and last for are for y
@@ -45,11 +54,12 @@ int main(void)
     BOARD_BootClockRUN();
     BOARD_InitDebugConsole();
 
-    PRINTF("hello world.\r\n");
+    //PRINTF("hello world.\r\n");
 
     while (1)
     {
-        ch = GETCHAR();
-        PUTCHAR(ch);
+    	int x1 = GPIO_PinRead(GPIOA, 12U);
+    	PRINTF("%d" , x1);
+
     }
 }
