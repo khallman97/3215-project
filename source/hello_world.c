@@ -31,7 +31,7 @@ int main(void)
 {
 
 	char pinArray[4][4] = {{"7" , "8" , "9" , "A"} , {"4" , "5" , "6" , "B" } , {"1" , "2" , "3" , "C" } , {"*" , "0" , "#" , "D" }};
-	int hello = 5;
+
 	/**8 ports**/
 	/* first 4 are for x axis and last for are for y
 	 * When button is pressed it will send signal to 1 x postion and 1 y
